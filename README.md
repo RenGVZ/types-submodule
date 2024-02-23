@@ -34,4 +34,12 @@ In main repo, add submodule with
 Note for cloning pre-created submodules into existing projects:
 If you already cloned the project and forgot --recurse-submodules, you can combine the `git submodule init` and `git submodule update` steps by running `git submodule update --init`. To also initialize, fetch and checkout any nested submodules, you can use the foolproof `git submodule update --init --recursive`.
 
+Pulling in the changes from the submodule to the main repo:
+Go into the submodule directory (from the main project directory) and run `git fetch` `git merge` to update the local code
+
+Easier way: `git submodule update --remote {{submodule_name}}`, from your main project directory, Git will go into your submodules and fetch and update for you.
+
+### Reference
+https://git-scm.com/book/en/v2/Git-Tools-Submodules
+
 
