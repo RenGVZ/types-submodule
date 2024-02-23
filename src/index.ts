@@ -1,7 +1,8 @@
 type Person = {
 	firstName: string,
 	lastName: string,
-	age: number
+	age: number,
+	work: string
 }
 
 export default Person

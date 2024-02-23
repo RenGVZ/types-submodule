@@ -28,4 +28,10 @@ gc -m 'initial types commit'
 ggp main
 
 
+In main repo, add submodule with
+`git submodule add {{git_url}}`
+
+Note for cloning pre-created submodules into existing projects:
+If you already cloned the project and forgot --recurse-submodules, you can combine the `git submodule init` and `git submodule update` steps by running `git submodule update --init`. To also initialize, fetch and checkout any nested submodules, you can use the foolproof `git submodule update --init --recursive`.
+
 
