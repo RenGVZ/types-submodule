@@ -42,6 +42,11 @@ Easier way: `git submodule update --remote {{submodule_name}}`, from your main p
 ### Change submodule branch for use in main project
   git config -f .gitmodules submodule.{{submodule_name}}.branch {{branch_you_want_name}}
 
+# To add a commit to submodule from main project
+cd into submodule, you will be automatically be checkedout to the most recent commit. In order to make and push changes, checkout to erther main or develop
+`gco main`
+`gco develop`
+
 ### Reference
 https://git-scm.com/book/en/v2/Git-Tools-Submodules
 
